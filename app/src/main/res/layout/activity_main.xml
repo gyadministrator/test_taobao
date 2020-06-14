@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:fitsSystemWindows="true"
+        app:expanded="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="banner"
+            android:textSize="30sp"
+            app:layout_scrollFlags="scroll"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="布局2"
+            android:textSize="30sp"
+            app:layout_scrollFlags="scroll"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="布局3"
+            android:textSize="30sp"
+            app:layout_scrollFlags="scroll"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="布局4"
+            android:textSize="30sp"
+            app:layout_scrollFlags="scroll"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/ll_picturew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/slidtab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimaryDark"
+            tl:tl_indicator_width="0dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#F00"
+            tl:tl_textUnselectColor="#f0f0f0"
+            tl:tl_textsize="18sp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
